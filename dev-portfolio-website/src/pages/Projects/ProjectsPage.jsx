@@ -2,8 +2,7 @@ import React from 'react'
 
 const ProjectsPage = () => {
   return (
-    <div>
-        <h1>Projects Page Works</h1>
+    <div className='projects-section'>
     </div>
   )
 }

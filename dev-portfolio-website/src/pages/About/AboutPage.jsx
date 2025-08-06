@@ -2,8 +2,8 @@ import React from 'react'
 
 const AboutPage = () => {
   return (
-    <div>
-        <h1>About Page Works</h1>
+    <div className='about-section'>
+        
     </div>
   )
 }

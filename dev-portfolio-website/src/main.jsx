@@ -5,11 +5,11 @@ import './index.css'
 import { createBrowserRouter, RouterProvider} from 'react-router-dom';
 
 
-import HomePage from './pages/HomePage.jsx';
-import AboutPage from './pages/AboutPage.jsx';
-import ExperiencePage from './pages/ExperiencePage.jsx';
-import ProjectsPage from './pages/ProjectsPage.jsx'
-import NotFoundPage from './pages/NotFoundPage.jsx'
+import HomePage from './pages/Home/HomePage.jsx';
+import AboutPage from './pages/About/AboutPage.jsx';
+import ExperiencePage from './pages/Experience/ExperiencePage.jsx';
+import ProjectsPage from './pages/Projects/ProjectsPage.jsx'
+import NotFoundPage from './pages/404/NotFoundPage.jsx'
 
 
 const router = createBrowserRouter([
