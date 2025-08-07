@@ -1,0 +1,15 @@
+.glowing-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    pointer-events: none;
+    z-index: -1;
+    
+    background-image: radial-gradient(
+        600px at var(--x-position, 50%) var(--y-position, 50%),
+        rgba(29, 78, 216, 0.15),
+        transparent 80%
+    );
+}

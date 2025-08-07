@@ -1,10 +1,9 @@
 import React from 'react'
-
-import Navbar from "./components/Navbar"
+import GlowingCursor from './components/Cursor/GlowingCursor'
 
 const App = () => {
   return (
-    <Navbar />
+    <GlowingCursor />
   )
 }
 
