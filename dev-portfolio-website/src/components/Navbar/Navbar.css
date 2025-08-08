@@ -1,9 +1,12 @@
+.navbar ul {
+  padding-left: 0em;
+}
+
 .nav-links {
   display: flex;
   align-items: center;
   margin-bottom: 1em; 
   color: white;
-  font-family: sans-serif; 
 }
 
 .nav-links::before {
@@ -12,5 +15,12 @@
   width: 30px; 
   height: 1px; 
   background-color: white; 
-  margin-right: 1.2em
+  margin-right: 1.2em;
+  transition: width 0.3s ease-in-out;
+}
+
+
+.nav-links:hover::before, 
+.nav-links:focus::before {
+  width: 50px;
 }

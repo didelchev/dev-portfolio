@@ -1,11 +1,15 @@
 .left-side {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    border: 1px solid white;
+    justify-content: space-between;
+    /* border: 1px solid white; */
     flex: 1 1 500px;
 }
 
-.left-side .personal-info{
+.left-side .top-side{
     padding-left: 1.5em;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
 }
+
