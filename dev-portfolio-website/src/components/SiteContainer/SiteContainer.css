@@ -1,0 +1,7 @@
+.site-container {
+    display: flex;
+    justify-content: flex-start;
+    min-height: 100vh;
+    padding: 7em 14em;
+    gap: 5em;
+}
