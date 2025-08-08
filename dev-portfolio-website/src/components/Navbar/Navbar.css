@@ -1,0 +1,16 @@
+.nav-links {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1em; 
+  color: white;
+  font-family: sans-serif; 
+}
+
+.nav-links::before {
+  content: ''; 
+  display: block;
+  width: 30px; 
+  height: 1px; 
+  background-color: white; 
+  margin-right: 1.2em
+}
