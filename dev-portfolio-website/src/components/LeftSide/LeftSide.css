@@ -13,3 +13,8 @@
     gap: 5em;
 }
 
+.left-side .top-side h1{
+    font-family: "Poppins";
+    font-weight: 600;
+    color: #CED8EE;
+}
