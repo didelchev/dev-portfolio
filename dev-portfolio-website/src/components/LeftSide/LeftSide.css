@@ -15,10 +15,15 @@
 
 .left-side .top-side h1{
     font-family: "Poppins";
+    font-size: 3em;
     font-weight: 600;
     color: #CED8EE;
+
 }
 
-.left-side .top-side p {
-    font-family: "Inter" ,sans-serif;
+.left-side .top-side  h4{
+    color: #CED8EE;
+    margin-bottom: 0.7em;
+    
 }
+

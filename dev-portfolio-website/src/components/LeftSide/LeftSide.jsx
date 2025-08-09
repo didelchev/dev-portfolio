@@ -10,8 +10,8 @@ const LeftSide = () => {
       <div className="top-side">
         <div className="personal-info">
           <h1>Daniel Delchev</h1>
-          <h4>Junior Full Stack Web Developer</h4>
-          <p>I build accessible, pixel-perfect digital experiences for the web.</p>
+          <h4>Front End Web Developer</h4>
+          <p>I build accessible, pixel-perfect digital <br />experiences for the web.</p>
         </div>
        <Navbar />
       </div>
