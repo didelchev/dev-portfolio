@@ -1,0 +1,50 @@
+.projects-container{
+    display: flex;
+    margin-top: 5em;
+}
+
+.projects-container .project{
+    display: flex;
+    gap: 2em;
+    padding: 1em;
+    /* border: 2px solid red; */  
+    
+}
+
+.project .image-container{
+    flex: 0 0 150px;
+}
+
+.project h5{
+    color: #CED8EE;
+}
+
+
+.project:hover{
+    background-color: rgba(255, 255, 255, 0.03); 
+    backdrop-filter: blur(10px); 
+    border-radius: 0.5em;
+}
+
+
+.project:hover h5{
+    color: turquoise;
+}
+
+.tech-used{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+
+.tech-used  span{
+    /* border: 1px solid white; */
+    padding: 0.3em 1em;
+    align-content: center;
+    border-radius: 1em;
+    background-color: rgb(19, 45, 67);
+    color: turquoise;
+
+
+
+}
