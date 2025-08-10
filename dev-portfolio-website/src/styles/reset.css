@@ -13,6 +13,7 @@
 html {
   overflow-x: hidden;
   color: #8693AF;
+  scroll-behavior: smooth;
 }
 
 body {

@@ -29,6 +29,7 @@
 
 .nav-links a:hover {
   color: #CED8EE;
+  cursor: pointer;
 }
 
 .nav-links a:hover::before {
