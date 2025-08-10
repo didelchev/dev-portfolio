@@ -24,8 +24,8 @@ const Navbar = () => {
         <li className={activeLink === 'Projects' ? 'nav-links active' : 'nav-links'}>
           <a href="#projects" onClick={ () => handleActiveLink('Projects')}>Projects</a>
         </li>
-        
       </ul>
+      <a href="/Daniel-Delchev-CV.pdf" download className='resume-btn'>Resume</a>
     </div>
   )
 }
