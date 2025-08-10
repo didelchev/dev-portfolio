@@ -1,6 +1,6 @@
 # TODO 
 
-[] Add navigation links to different sections
+[x] Add navigation links to different sections
 [] Responsive design
 [] Rewrite About section
 [] Add Tech Stack Section
