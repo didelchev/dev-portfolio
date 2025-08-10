@@ -44,3 +44,18 @@
 .nav-links.active a::before {
   width: 60px;
 }
+
+
+.resume-btn{
+  padding: 1em;
+  background-color: rgb(19, 45, 67);
+  border: none;
+  border-radius: 0.3em;
+  color: turquoise;
+}
+
+.resume-btn:hover{
+    backdrop-filter: blur(10px); 
+    border-radius: 0.5em;
+    cursor: pointer;
+}
