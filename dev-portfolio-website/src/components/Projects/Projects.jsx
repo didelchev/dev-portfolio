@@ -4,7 +4,7 @@ import "./Projects.css"
 
 const Projects = () => {
   return (
-    <div className="projects-container">
+    <div className="projects-container" id="projects">
         <div className="project">
             <div className="image-container">
                 <img src={ shelfieImg } alt="" srcset="" />

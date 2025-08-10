@@ -3,7 +3,7 @@ import './Experience.css'
 
 const Experience = () => {
   return (
-   <div className="experience-container">
+   <div className="experience-container" id="experience">
     <div className="job">
         <div className="date-started">
             <p>2023 - Present</p>
