@@ -1,0 +1,49 @@
+.experience{
+    border: 1px solid white;
+    margin-top: 5em;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+
+.experience .date-started{
+    flex: 1 1 80px;
+}
+
+
+.experience .job{
+    display: flex;
+    gap: 3em;
+    border: 1px solid lime;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.experience .job h4{
+    color: #CED8EE;
+}
+
+.experience .job-description {
+    flex: 1 0 70%;
+}
+
+
+
+.job:hover{
+    background-color: rgba(255, 255, 255, 0.05); 
+    backdrop-filter: blur(10px); 
+}
+
+
+.experience:hover .job * {
+  opacity: 0.5;
+  transition: opacity 0.3s ease;
+}
+
+.experience .job:hover * {
+  opacity: 1;
+}
+
+.experience .job:hover h4{
+    color: lightseagreen;
+}

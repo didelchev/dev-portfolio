@@ -1,5 +1,7 @@
 .right-side{
     border: 1px solid white;
-    flex: 1 1 500px;
+    flex: 0 0 700px;
+    overflow-y: auto;
+    margin-left: 550px;
 
 }

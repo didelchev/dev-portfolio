@@ -1,7 +1,8 @@
 .site-container {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     min-height: 100vh;
     padding: 7em 14em;
     gap: 5em;
+    /* border: 20px solid black ; */
 }
