@@ -14,7 +14,7 @@ const Projects = () => {
             </div>
             <a href='https://shelfie-book-app.netlify.app/'target='_blank' className="project-info">
                 <h5>Shelfie App</h5>
-                <p>Shelfie is a web application designed to help users organize their personal book collections, discover new reads, and track their reading progress.</p>
+                <p>Shelfie is a singe page application designed to help users organize their personal book collections, discover new reads, and track their reading progress.</p>
                 <div className="tech-used">
                     <span >JavaScript</span>
                     <span>Lit</span>
