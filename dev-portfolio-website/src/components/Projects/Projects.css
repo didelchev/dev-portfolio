@@ -1,13 +1,17 @@
 .projects-container{
     display: flex;
+    flex-direction: column;
+    /* border: 2px solid lime; */
     margin-top: 5em;
+    text-align: left;
+    padding: 1em;
 }
 
 .projects-container .project{
     display: flex;
     gap: 2em;
-    padding: 1em;
-    /* border: 2px solid red; */  
+    margin-top: 1em;
+    /* border: 2px solid red;   */
     
 }
 
