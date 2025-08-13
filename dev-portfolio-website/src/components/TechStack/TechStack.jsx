@@ -24,7 +24,7 @@ const TechStack = () => {
 
 
   return (
-    <div className="tech-stack">
+    <div className="tech-stack" id='tech-stack'>
       <h3>Technologies</h3>
         <div className="tech-stack-container">
          {techStack.map((tech) => (

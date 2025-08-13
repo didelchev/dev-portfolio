@@ -35,6 +35,17 @@ const Navbar = () => {
             Projects
           </ScrollLink>
         </li>
+        <li className={activeLink === 'Tech Stack' ? 'nav-links active' : 'nav-links'}>
+          <ScrollLink
+            to="tech-stack"
+            smooth={true}
+            duration={500}
+            offset={-80}
+            onClick={() => handleActiveLink('Tech Stack')}
+          >
+            Technologies
+          </ScrollLink>
+        </li>
         <li className={activeLink === 'Experience' ? 'nav-links active' : 'nav-links'}>
           <ScrollLink
             to="experience"
