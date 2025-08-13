@@ -1,4 +1,22 @@
+.tech-stack{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    /* border: 2px solid lime; */
+    margin-top: 2em;
+    padding: 1em;
+}
+
 .tech-stack-container{
     display: flex;
-    border: 2px solid lime;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+.tech-item svg {
+  transition: transform 0.2s ease-in-out;
+}
+
+.tech-item:hover svg {
+  transform: scale(1.1);
 }
