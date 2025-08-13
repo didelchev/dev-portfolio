@@ -10,7 +10,7 @@ const RightSide = () => {
     <div className="right-side" id='right-side'>
       <About />
       <Projects />
-      {/* <TechStack /> */}
+      <TechStack />
       <Experience />
     </div>
   )
