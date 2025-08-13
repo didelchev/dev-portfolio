@@ -32,16 +32,16 @@
 
 // export default Navbar
 
-import React, { useState } from 'react'
-import { Link as ScrollLink } from 'react-scroll'
-import './Navbar.css'
+import React, { useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
+import './Navbar.css';
 
 const Navbar = () => {
-  const [activeLink, setActiveLink] = useState('About')
+  const [activeLink, setActiveLink] = useState('');
 
   const handleActiveLink = (linkName) => {
-    setActiveLink(linkName)
-  }
+    setActiveLink(linkName);
+  };
 
   return (
     <div className="navbar">
@@ -51,11 +51,8 @@ const Navbar = () => {
             to="about"
             smooth={true}
             duration={500}
-            offset={-80} 
+            offset={-80}
             onClick={() => handleActiveLink('About')}
-            spy= {true}
-            containerId='right-side'
-            activeClass='active'
           >
             About
           </ScrollLink>
@@ -67,10 +64,6 @@ const Navbar = () => {
             duration={500}
             offset={-80}
             onClick={() => handleActiveLink('Projects')}
-            spy= {true}
-            activeClass='active'
-            containerId='right-side'
-
           >
             Projects
           </ScrollLink>
@@ -82,21 +75,16 @@ const Navbar = () => {
             duration={500}
             offset={-80}
             onClick={() => handleActiveLink('Experience')}
-            spy= {true}
-            activeClass='active'
-            containerId='right-side'
-
           >
             Experience
           </ScrollLink>
         </li>
-        
       </ul>
       <a href="/Daniel-Delchev-CV.pdf" download className="resume-btn">
         Resume
       </a>
     </div>
-  )
-}
+  );
+};
 
-export default Navbar
+export default Navbar;
