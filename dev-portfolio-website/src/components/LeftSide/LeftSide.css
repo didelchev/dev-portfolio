@@ -4,8 +4,9 @@
     justify-content: space-between;
     /* border: 1px solid white; */
     position: fixed;
-    top: 105px;
+    top: 115px;
     height: 70vh;
+    
 }
 
 .left-side .top-side{
@@ -30,3 +31,10 @@
     
 }
 
+@media (max-width: 769px) {
+    .left-side {
+        position: unset;
+        display: block;
+        height: fit-content;
+    }
+}

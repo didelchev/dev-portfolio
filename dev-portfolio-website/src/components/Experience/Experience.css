@@ -5,8 +5,13 @@
     gap: 0.5em;
 }
 
+.experience-container h3{
+    display: none;
+}
+
 .experience-container .date-started{
     flex: 1 1 80px;
+
 }
 
 
@@ -15,6 +20,7 @@
     gap: 3em;
     padding: 1em;
     border-radius: 0.5em;
+
 }
 
 .experience-container .job h4{
@@ -54,4 +60,31 @@
 .experience-container .job:hover h5{
     color: #CED8EE;
 
+}
+
+@media (max-width: 769px) {
+    .experience-container h3{
+        display: block;
+        text-transform: uppercase;
+        color:#CED8EE ;
+        font-size: 1.5em;
+    }
+
+    .experience-container .job{
+        gap: 0;
+        flex-direction: column;
+
+    }
+
+
+    .experience-container .date-started{
+        flex: none;
+}
+
+    .experience-container .date-started p {
+        text-transform: uppercase;
+        padding-bottom: 0.3em;
+        font-size: 1.1em;
+        font-weight: 500;
+    }
 }

@@ -13,3 +13,10 @@
         transparent 80%
     );
 }
+
+
+@media (max-width: 769px) {
+    .glowing-cursor{
+        display: none;
+    }
+}

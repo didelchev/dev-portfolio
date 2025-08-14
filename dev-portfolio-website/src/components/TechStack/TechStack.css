@@ -13,10 +13,29 @@
     padding: 2em;
 }
 
+
 .tech-item svg {
   transition: transform 0.2s ease-in-out;
 }
 
 .tech-item:hover svg {
   transform: scale(1.1);
+}
+
+
+@media (max-width: 769px) {
+  .tech-stack h3{
+    text-transform: uppercase;
+    color:#CED8EE ;
+    font-size: 1.5em;
+  }
+
+
+
+    .tech-stack-container{
+      /* border: 1px solid white; */
+      gap: 2em;
+      padding: 0;
+      margin-top: 2em;
+    }
 }

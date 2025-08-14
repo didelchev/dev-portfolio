@@ -60,3 +60,10 @@
     border-radius: 0.5em;
     cursor: pointer;
 }
+
+
+@media (max-width: 769px) {
+    .navbar {
+      display: none;
+    }
+}

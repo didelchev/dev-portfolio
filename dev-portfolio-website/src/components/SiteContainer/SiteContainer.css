@@ -1,8 +1,17 @@
 .site-container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     min-height: 100vh;
     padding: 7em 14em;
     gap: 5em;
-    /* border: 20px solid black ; */
+    /* border: 10px solid white ; */
 }
+
+
+@media (max-width: 769px) {
+    .site-container {
+        padding: 3em 1em;
+    }
+}
+

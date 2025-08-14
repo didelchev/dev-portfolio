@@ -1,7 +1,16 @@
 .right-side{
     /* border: 1px solid white; */
-    flex: 0 0 700px;
+    flex: 0 1 700px;
     overflow-y: scroll;
     margin-left: 550px;
 
+}
+
+
+@media (max-width: 769px) {
+    .right-side{
+        display: block;
+        margin-left: 0;
+
+    }
 }
