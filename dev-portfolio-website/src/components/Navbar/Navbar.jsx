@@ -58,7 +58,7 @@ const Navbar = () => {
           </ScrollLink>
         </li>
       </ul>
-      <a href="/Daniel-Delchev-CV.pdf" download className="resume-btn">
+      <a href="/cv-daniel-delchev.pdf" download className="resume-btn">
         CV
       </a>
     </div>
