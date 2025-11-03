@@ -59,6 +59,7 @@ const Navbar = () => {
         </li>
       </ul>
       <a href="/resume-daniel-delchev.pdf" download className="resume-btn">
+      <a href="/resume-daniel-delchev.pdf" download className="resume-btn">
         CV
       </a>
     </div>
