@@ -13,8 +13,8 @@
     font-size: 1em;
     text-transform: uppercase;
     letter-spacing: 0.12em;
-    color: #1DC896;
-    margin-bottom: 1em;
+    color: #b4befe; 
+    margin-bottom: 0.5em;
     font-weight: 500;
 }
 
@@ -22,9 +22,14 @@
     content: '';
     flex: 1;
     height: 1px;
-    background: rgba(29, 200, 150, 0.2);
+    background: rgba(180, 190, 254, 0.2); 
 }
 
+.projects-container h3.section-gap {
+    margin-top: 2.5em;
+}
+
+/* ── Shared project card ── */
 .projects-container .project {
     display: flex;
     gap: 2em;
@@ -42,7 +47,7 @@
     flex: 0 0 150px;
     border-radius: 0.4em;
     overflow: hidden;
-    border: 1px solid rgba(255, 255, 255, 0.07);
+    border: 1px solid rgba(180, 190, 254, 0.07); 
     align-self: flex-start;
 }
 
@@ -54,7 +59,7 @@
 }
 
 .project h5 {
-    color: #CED8EE;
+    color: #cdd6f4; 
     display: flex;
     align-items: center;
     gap: 0.4em;
@@ -63,7 +68,7 @@
 
 .project .arrow-icon {
     font-size: 0.75em;
-    color: #1DC896;
+    color: #b4befe; 
     opacity: 0;
     transform: translate(-3px, 3px);
     transition: opacity 0.2s ease, transform 0.2s ease;
@@ -78,22 +83,22 @@
     font-size: 0.6em;
     padding: 0.2em 0.6em;
     border-radius: 1em;
-    background: rgba(29, 200, 150, 0.1);
-    color: #1DC896;
-    border: 1px solid rgba(29, 200, 150, 0.25);
+    background: rgba(180, 190, 254, 0.1);
+    color: #b4befe; 
+    border: 1px solid rgba(180, 190, 254, 0.25);
     font-weight: 500;
     letter-spacing: 0.03em;
     vertical-align: middle;
 }
 
 .project:hover {
-    background-color: rgba(255, 255, 255, 0.03);
-    border-color: rgba(255, 255, 255, 0.08);
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    background-color: rgba(180, 190, 254, 0.04);
+    border-color: rgba(180, 190, 254, 0.1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
 }
 
 .project:hover h5 {
-    color: #1DC896;
+    color: #b4befe; 
 }
 
 .projects-container:hover .project {
@@ -105,24 +110,104 @@
     opacity: 1;
 }
 
+/* ── In-development card ── */
+.project.in-development {
+    border-color: rgba(249, 226, 175, 0.15); 
+    background-color: rgba(249, 226, 175, 0.03);
+    cursor: default;
+    pointer-events: none;
+}
+
+.project.in-development:hover {
+    background-color: rgba(249, 226, 175, 0.03);
+    border-color: rgba(249, 226, 175, 0.15);
+    box-shadow: none;
+}
+
+.project.in-development h5 {
+    color: #cdd6f4; 
+}
+
+/* Placeholder thumbnail */
+.placeholder-thumb {
+    background: rgba(49, 50, 68, 0.4); 
+    border-color: rgba(49, 50, 68, 0.6);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90px;
+}
+
+.thumb-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    min-height: 90px;
+}
+
+.thumb-icon {
+    font-size: 1.8em;
+    opacity: 0.2;
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to   { transform: rotate(360deg); }
+}
+
+.wip-badge {
+    font-size: 0.58em;
+    padding: 0.2em 0.65em;
+    border-radius: 1em;
+    background: rgba(249, 226, 175, 0.1); 
+    color: #f9e2af; 
+    border: 1px solid rgba(249, 226, 175, 0.3);
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    vertical-align: middle;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.35em;
+}
+
+.wip-badge::before {
+    content: '';
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #f9e2af; 
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { opacity: 1; transform: scale(1); }
+    50%       { opacity: 0.4; transform: scale(0.7); }
+}
+
+/* ── Tech tags ── */
 .tech-used {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5em;
+    gap: 0.8em;
     margin-top: 0.6em;
 }
 
 .tech-used span {
     padding: 0.25em 0.75em;
     border-radius: 1em;
-    background-color: rgba(29, 200, 150, 0.08);
-    color: #1DC896;
-    border: 1px solid rgba(29, 200, 150, 0.2);
+    background-color: rgba(148, 226, 213, 0.08); 
+    color: #94e2d5; 
+    border: 1px solid rgba(148, 226, 213, 0.2);
     font-size: 0.78em;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
 
+/* ── Responsive ── */
 @media (max-width: 1100px) {
     .project .image-container {
         flex: 0 0 120px;
@@ -136,15 +221,8 @@
     }
 
     .projects-container h3 {
-        display: flex;
-        align-items: center;
-        gap: 0.75em;
         font-size: 1.1em;
-        text-transform: uppercase;
-        letter-spacing: 0.12em;
-        color: #1DC896;
-        margin-bottom: 1em;
-        font-weight: 500;
+        color: #cdd6f4; 
     }
 
     .projects-container .project {
@@ -155,6 +233,10 @@
     .project .image-container {
         flex: 0 0 100%;
         max-height: 180px;
+    }
+
+    .placeholder-thumb {
+        min-height: 80px !important;
     }
 
     .projects-container .project p {

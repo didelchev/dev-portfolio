@@ -9,7 +9,7 @@
     
     background-image: radial-gradient(
         600px at var(--x-position, 50%) var(--y-position, 50%),
-        rgba(29, 78, 216, 0.15),
+        rgba(180, 190, 254, 0.08),
         transparent 80%
     );
 }
