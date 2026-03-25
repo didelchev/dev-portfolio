@@ -1,69 +1,74 @@
 .navbar ul {
-  padding-left: 0em;
-  text-transform: uppercase;
-  font-size: 0.95em;
-  font-weight: 500;
+    padding-left: 0;
+    text-transform: uppercase;
+    font-size: 0.95em;
+    font-weight: 500;
 }
 
 .nav-links {
-  display: flex;
-  align-items: center;
-  margin-bottom: 1em;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
 }
 
 .nav-links a {
-  display: flex;
-  align-items: center;
-  color: inherit; 
+    display: flex;
+    align-items: center;
+    color: inherit;
 }
 
 .nav-links a::before {
-  content: '';
-  display: block;
-  width: 30px;
-  height: 1px;
-  background-color: #8693AF;
-  margin-right: 1.2em;
-  transition: 0.3s ease-in-out;
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    background-color: #8693AF;
+    margin-right: 1.2em;
+    transition: width 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .nav-links a:hover {
-  color: #CED8EE;
-  cursor: pointer;
-}
-
-.nav-links a:hover::before {
-  width: 60px;
-  background-color: #CED8EE;
-}
-
-.nav-links.active a {
-  color: #CED8EE;
-  font-weight: 600;
-}
-
-.nav-links.active a::before {
-  width: 60px;
-}
-
-
-.resume-btn{
-  padding: 1em;
-  background-color: rgb(19, 45, 67);
-  border: none;
-  border-radius: 0.3em;
-  color: turquoise;
-}
-
-.resume-btn:hover{
-    backdrop-filter: blur(10px); 
-    border-radius: 0.5em;
+    color: #CED8EE;
     cursor: pointer;
 }
 
+.nav-links a:hover::before {
+    width: 60px;
+    background-color: #CED8EE;
+}
+
+.nav-links.active a {
+    color: #CED8EE;
+    font-weight: 600;
+}
+
+.nav-links.active a::before {
+    width: 60px;
+    background-color: #CED8EE;
+}
+
+.resume-btn {
+    display: inline-block;
+    margin-top: 0.5em;
+    padding: 0.75em 1.25em;
+    background-color: rgba(29, 200, 150, 0.08);
+    border: 1px solid rgba(29, 200, 150, 0.25);
+    border-radius: 0.4em;
+    color: #1DC896;
+    font-size: 0.9em;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    transition: background-color 0.2s ease, border-color 0.2s ease;
+}
+
+.resume-btn:hover {
+    background-color: rgba(29, 200, 150, 0.15);
+    border-color: rgba(29, 200, 150, 0.5);
+    cursor: pointer;
+}
 
 @media (max-width: 769px) {
     .navbar {
-      display: none;
+        display: none;
     }
 }

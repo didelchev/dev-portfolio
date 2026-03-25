@@ -1,17 +1,34 @@
 .site-container {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     min-height: 100vh;
-    padding: 7em 14em;
-    gap: 5em;
-    /* border: 10px solid white ; */
+    padding: 8em 15em;
+    gap: 15em;
 }
 
-
-@media (max-width: 769px) {
+@media (max-width: 1400px) {
     .site-container {
-        padding: 3em 1em;
+        padding: 5em 5em;
+        gap: 4em;
     }
 }
 
+@media (max-width: 1100px) {
+    .site-container {
+        padding: 4em 3em;
+        gap: 3em;
+    }
+}
+
+@media (max-width: 769px) {
+    .site-container {
+        flex-direction: column;
+        padding: 3em 1.5em;
+        gap: 2em;
+    }
+}
+
+@media (max-width: 420px) {
+    .site-container {
+        padding: 2em 1em;
+    }
+}

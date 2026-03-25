@@ -2,39 +2,66 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    /* border: 1px solid white; */
-    position: fixed;
-    top: 115px;
-    height: 70vh;
-    
+    position: sticky;
+    top: 4em;
+    height: calc(100vh - 8em);
+    flex: 0 0 340px;
 }
 
-.left-side .top-side{
-    
+.left-side .top-side {
     padding-left: 1.5em;
     display: flex;
     flex-direction: column;
-    gap: 5em;
+    gap: 3em;
 }
 
-.left-side .top-side h1{
+.left-side .top-side h1 {
     font-family: "Poppins";
-    font-size: 3em;
+    font-size: 2.5em;
     font-weight: 600;
     color: #CED8EE;
-
+    line-height: 1.1;
 }
 
-.left-side .top-side  h4{
+.left-side .top-side h4 {
     color: #CED8EE;
     margin-bottom: 0.7em;
-    
 }
 
+/* Small desktops */
+@media (max-width: 1100px) {
+    .left-side {
+        flex: 0 0 280px;
+        top: 3em;
+        height: calc(100vh - 6em);
+    }
+
+    .left-side .top-side h1 {
+        font-size: 2em;
+    }
+}
+
+/* Tablets + phones */
 @media (max-width: 769px) {
     .left-side {
         position: unset;
         display: block;
         height: fit-content;
+        flex: none;
+    }
+
+    .left-side .top-side {
+        padding-left: 0;
+        gap: 1.5em;
+    }
+
+    .left-side .top-side h1 {
+        font-size: 2.2em;
+    }
+}
+
+@media (max-width: 420px) {
+    .left-side .top-side h1 {
+        font-size: 1.8em;
     }
 }

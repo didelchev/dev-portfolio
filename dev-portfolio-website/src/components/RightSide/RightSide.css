@@ -1,16 +1,14 @@
-.right-side{
-    /* border: 1px solid white; */
-    flex: 0 1 700px;
-    overflow-y: scroll;
-    margin-left: 550px;
-
+.right-side {
+    flex: 0 1 50%;
+    min-width: 0;
+    overflow-y: auto;
+    padding-bottom: 4em;
 }
 
-
 @media (max-width: 769px) {
-    .right-side{
-        display: block;
-        margin-left: 0;
-
+    .right-side {
+        flex: none;
+        overflow-y: unset;
+        padding-bottom: 2em;
     }
 }

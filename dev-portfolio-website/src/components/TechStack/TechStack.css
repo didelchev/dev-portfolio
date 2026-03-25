@@ -1,41 +1,119 @@
-.tech-stack{
+.tech-stack {
     display: flex;
     flex-direction: column;
     text-align: left;
-    /* border: 2px solid lime; */
     margin-top: 2em;
     padding: 1em;
 }
 
-.tech-stack-container{
+.tech-stack h3 {
     display: flex;
-    justify-content: space-between;
-    padding: 2em;
+    align-items: center;
+    gap: 0.75em;
+    font-size: 0.85em;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    color: #1DC896;
+    margin-bottom: 1em;
+    font-weight: 500;
 }
 
-
-.tech-item svg {
-  transition: transform 0.2s ease-in-out;
+.tech-stack h3::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: rgba(29, 200, 150, 0.2);
 }
 
-.tech-item:hover svg {
-  transform: scale(1.1);
+.tech-stack-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 0.75em;
+    padding: 0.5em 0;
 }
 
+.tech-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5em;
+    padding: 1em 0.5em;
+    border-radius: 0.5em;
+    border: 1px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+    cursor: default;
+}
+
+.tech-item:hover {
+    background-color: rgba(255, 255, 255, 0.03);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.tech-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.tech-item:hover .tech-icon {
+    transform: scale(1.1) translateY(-2px);
+}
+
+.tech-name {
+    font-size: 0.68em;
+    color: rgba(134, 147, 175, 0.6);
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    padding-bottom: 0;
+    transition: color 0.2s ease;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.tech-item:hover .tech-name {
+    color: #CED8EE;
+}
+
+.tech-stack-container:hover .tech-item {
+    opacity: 0.5;
+    transition: opacity 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.tech-stack-container .tech-item:hover {
+    opacity: 1;
+}
+
+@media (max-width: 1100px) {
+    .tech-stack-container {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}
 
 @media (max-width: 769px) {
-  .tech-stack h3{
-    text-transform: uppercase;
-    color:#CED8EE ;
-    font-size: 1.5em;
-  }
+    .tech-stack {
+        padding: 0;
+        margin-top: 3em;
+    }
 
+    .tech-stack h3 {
+        font-size: 1.5em;
+        color: #CED8EE;
+    }
 
+    .tech-stack-container {
+        grid-template-columns: repeat(5, 1fr);
+        gap: 0.5em;
+    }
 
-    .tech-stack-container{
-      /* border: 1px solid white; */
-      gap: 2em;
-      padding: 0;
-      margin-top: 2em;
+    .tech-item {
+        padding: 0.75em 0.25em;
+    }
+}
+
+@media (max-width: 480px) {
+    .tech-stack-container {
+        grid-template-columns: repeat(3, 1fr);
     }
 }
